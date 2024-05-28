@@ -1672,8 +1672,8 @@ In DataFrames.jl manipulation functions,
 The examples shown above will be explained in more detail later.
 
 *The manipulation functions also have methods for applying multiple operations.
-See the later sections [Applying Multiple Operations per Manipulation](@ref)
-and [Broadcasting Operation Pairs](@ref) for more information.*
+See the later sections [Applying Multiple Operations per Manipulation](@ref multi_op_manipulations)
+and [Broadcasting Operation Pairs](@ref broadcasting_operation_pairs) for more information.*
 
 #### `source_column_selector`
 Inside an `operation`, `source_column_selector` is usually a column name
@@ -2511,7 +2511,7 @@ julia> transform(df, :data => identity => new_names)
    2 │ (3, 4)             3               4
 ```
 
-### Applying Multiple Operations per Manipulation
+### [Applying Multiple Operations per Manipulation](@id multi_op_manipulations)
 All data frame manipulation functions can accept multiple `operation` pairs
 at once using any of the following methods:
 - `manipulation_function(dataframe, operation1, operation2)`   : multiple arguments
@@ -2646,7 +2646,7 @@ julia> transform!(new_df, :d => (x -> x ./ 2) => :d_2)
 ```
 
 
-### Broadcasting Operation Pairs
+### [Broadcasting Operation Pairs](@id broadcasting_operation_pairs)
 
 [Broadcasting](https://docs.julialang.org/en/v1/manual/arrays/#Broadcasting)
 pairs with `.=>` is often a convenient way to generate multiple
