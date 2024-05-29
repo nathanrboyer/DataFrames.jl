@@ -1,11 +1,5 @@
 using Documenter
 using DataFrames
-using CategoricalArrays
-
-DocMeta.setdocmeta!(DataFrames, :DocTestSetup, :(using DataFrames); recursive=true)
-
-# Build documentation.
-# ====================
 
 makedocs(
     # options
@@ -23,16 +17,4 @@ makedocs(
         "Introduction" => "index.md",
         "First Steps with DataFrames.jl" => "man/basics.md",
     ],
-)
-
-# Deploy built documentation.
-# ===========================
-
-deploydocs(
-    # options
-    repo = "github.com/JuliaData/DataFrames.jl.git",
-    target = "build",
-    deps = nothing,
-    make = nothing,
-    devbranch = "main"
 )
