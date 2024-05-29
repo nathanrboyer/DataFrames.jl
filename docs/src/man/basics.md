@@ -1,15 +1,15 @@
-# First Steps with DataFrames.jl
+# Header 1
 
-## Manipulation Functions
+## Header 2
 
-Reference a [Header](@ref).
+Reference [Header 3](@ref).
 
 !!! Note
       ```julia
       "hello"
       ```
 
-### Header
+### Header 3
 
 ```julia
 "hello"
