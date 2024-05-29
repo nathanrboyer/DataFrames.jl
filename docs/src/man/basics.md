@@ -2,18 +2,14 @@
 
 ## Manipulation Functions
 
-The manipulation functions also have methods for applying multiple operations.
-See the later sections [Applying Multiple Operations per Manipulation](@ref)
-and [Broadcasting Operation Pairs](@ref) for more information.
+Reference a [Header](@ref).
 
 !!! Note
       ```julia
       "hello"
       ```
 
-### Applying Multiple Operations per Manipulation
-
-### Broadcasting Operation Pairs
+### Header
 
 ```julia
 "hello"
