@@ -2,7 +2,6 @@ using Documenter
 using DataFrames
 
 makedocs(
-    # options
     modules = [DataFrames],
     doctest = false,
     clean = true,
